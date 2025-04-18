@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>News Ticker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .ticker-wrap {
+      background: #0078d4;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .ticker {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker 20s linear infinite;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-wrap">
+    <div class="ticker">
+      🚨 Company Meeting this Friday @ 10AM | 🎉 Employee of the Month: Jane Doe | 📢 Q2 Reports due April 30th
+    </div>
+  </div>
+</body>
+</html>
